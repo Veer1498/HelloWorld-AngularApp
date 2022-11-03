@@ -1,11 +1,25 @@
 div{
     text-align: center;
     font-size: x-large;
-    color: blue;
+    color:darkmagenta;
+}
+h1{
+    background-color:darkgray;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 img{
     display: block;
     margin: 0 auto;
     width: 25%;
+}
+.error-output {
+    margin-left:  10px;
+    font-size:  12px;
+    font-style: italic;
+    color: red;
+}
+#name{
+    color: green;
 }

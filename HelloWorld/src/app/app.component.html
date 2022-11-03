@@ -1,14 +1,23 @@
-
-<div>
-  <h1>
-    {{this.title}}
-  </h1>
-  <h2>
-    Welcome to {{userName}}
-  </h2>
-  <img  [src]="imageUrl" (click)="onClick($event)" alt="#Bridgelabz Logo">
-
-</div>
-<div>
-  Enter Name <input [(ngModel)]="userName"> <br/><br/>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World App</title>
+</head>
+<body>
+  <div>
+    <h1>
+      {{this.title}}
+    </h1>
+    <img  [src]="imageUrl" (click)="onClick($event)" alt="#Briglabz">
+    <h3>
+      Welcome To Hello World App, {{this.userName}}
+    </h3>
+    <label id="name">Enter Name : </label>
+    <input (input)="onInput($event)" [(ngModel)]="userName"/>
+    <span class=error-output>{{this.nameError}}</span>
+  </div>
+</body>
+</html>
